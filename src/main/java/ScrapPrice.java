@@ -21,6 +21,13 @@ public class ScrapPrice {
         } catch (Exception e){
             ele = Doc.getElementById("priceblock_saleprice").text();
         }
+        
+        catch (Exception e){
+            ele = Doc.getElementById("priceblock_dealprice").text();
+        }
+        
+
+
         ele = ele.replace(",", "");
         double z = Double.parseDouble(ele);
         System.out.println(ele);
